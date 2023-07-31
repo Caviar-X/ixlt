@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-material-ui@latest/material-ui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://xqcupdates.com/favicon.ico" />
+    <title>IXLT-4 | International XQC Language Test Band 4</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="./index.html" class="brand-logo"><img
+                    src="https://cdn.betterttv.net/emote/6187e07e1f8ff7628e6cd5eb/2x" style="height:64px;" /></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="./ixlt4.html">IXLT-4</a></li>
+                <li><a href="./ixlt6.html">IXLT-6</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="header center blue-text">IXLT-4 Answer Sheet</h1>
+    <div class="row center">
+        <h5>The IXLT-4 test is the easiest test in IXLT series.This is also more friendly to the beginners.</h3>
+        <h5>If you have any questions to the answer. You can </h5>
+            <h5>rank judgement might be change.</h5>
+            <h5>The rank:</h5>
+            <div class="col s6 offset-s3">
+                <ul class="collection">
+                    <li class="collection-item">less than 60 : pogger </li>
+                    <li class="collection-item">60 ~ 80 : juicer </li>
+                    <li class="collection-item">Above 80 : juicer master</li>
+                </ul>
+                <audio controls src="./ixlt4.mp3">IXLT4 audio source</audio>
+            </div>
+            
+            
+    </div>
+    <div class="container z-depth-4">
+        <h3>Section A</h3>
+        <p>In this section, you will hear dual XQC live clips. At the end of each clips, you'll hear one question. Both
+            the clips and the questions will only be spoken by once.</p>
+        <p>After you hear the question, You must choose the best answer from the four choices marked A,B,C,D. Then,fill
+            your answer on the answer sheet</p>
+        <hr>
+        <h5>1.What day might it be today?</h5>
+        <label>
+            <input name="A" type="radio" />
+            <span>A.Tuesday</span>
+        </label>
+        <br>
+        <label>
+            <input name="B" type="radio" />
+            <span>B.Thursday</span>
+        </label>
+        <br>
+        <label>
+            <input name="C" type="radio" />
+            <span>C.Saturday</span>
+        </label>
+        <br>
+        <label>
+            <input name="D" type="radio" />
+            <span>D.Unkown</span>
+        </label>
+        <br>
+        <h5>2.Where does XQC think the capitial of Canada is?</h5>
+        <label>
+            <input name="A" type="radio" />
+            <span>A.Ontario</span>
+        </label>
+        <br>
+        <label>
+            <input name="B" type="radio" />
+            <span>B.Ottawa</span>
+        </label>
+        <br>
+        <label>
+            <input name="C" type="radio" />
+            <span>C.Winnipeg</span>
+        </label>
+        <br>
+        <label>
+            <input name="D" type="radio" />
+            <span>D.Unkown</span>
+        </label>
+        <br>
+        <h5>3.What animal did xqc just see?</h5>
+        <label>
+            <input name="A" type="radio" />
+            <span>A.gorrila</span>
+        </label>
+        <br>
+        <label>
+            <input name="B" type="radio" />
+            <span>B.bird</span>
+        </label>
+        <br>
+        <label>
+            <input name="C" type="radio" />
+            <span>C.crow</span>
+        </label>
+        <br>
+        <label>
+            <input name="D" type="radio" />
+            <span>D.duck</span>
+        </label>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@latest/dist/sweetalert2.min.js"></script>
+    <script>
+        function getParam(name) {
+            let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            let r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return decodeURIComponent(r[2]);
+            };
+            return "";
+        }
+        //TODO: Delete it
+        if (getParam("popup") !== "false") {
+            Swal.fire(
+                'Oops...',
+                'This page is currently under construction,but you can still view it',
+                'info'
+            ).then((res) => { if (res.isConfirmed) { window.location = window.location + "?popup=false"; } });
+        }
+    </script>
+</body>
+
+</html>
